@@ -53,6 +53,12 @@ svg text{font-family:Manrope,sans-serif}
 .cat{display:grid;grid-template-columns:150px 1fr;gap:20px;padding:22px 0;border-top:1px solid var(--rule)}
 .cat b{font-size:12px;letter-spacing:.14em;text-transform:uppercase;color:var(--gold)}
 @media(max-width:860px){.ex{grid-template-columns:1fr}.cat{grid-template-columns:1fr;gap:6px}}
+.founder{display:grid;grid-template-columns:minmax(240px,4fr) 8fr;gap:clamp(30px,6vw,100px);margin-top:clamp(70px,10vw,140px);padding-top:clamp(40px,5vw,70px);border-top:1px solid var(--navy)}
+.founder img{display:block;width:100%;aspect-ratio:1/1;object-fit:cover;object-position:center 22%;filter:saturate(.9)}
+.founder h3{font-size:clamp(38px,5vw,72px);margin-bottom:28px}
+.founder-role{color:var(--gold);font-size:14px;font-weight:600;letter-spacing:.04em;margin:-10px 0 24px}
+.founder-links{display:flex;flex-wrap:wrap;gap:14px;margin-top:34px}
+@media(max-width:860px){.founder{grid-template-columns:1fr}.founder img{max-width:420px}}
 .fade{animation:f .35s ease}@keyframes f{from{opacity:0;transform:translateY(6px)}}
 .ins{display:grid;grid-template-columns:200px 1fr 60px;gap:30px;padding:36px 0;border-top:1px solid var(--rule);align-items:baseline;transition:background .2s}
 .ins h3{font-size:clamp(24px,3.2vw,44px);max-width:20em}.ins:hover h3{text-decoration:underline;text-decoration-thickness:1px;text-underline-offset:8px}
