@@ -3,6 +3,6 @@ export default function About() {
   return (<section id="about"><div className="w grid2"><div><p className="eyebrow eb">About company</p><h2>A specialist consultancy built for modern enterprise finance.</h2></div>
     <div><p className="lead" style={{ marginBottom: 40 }}>Paulson Global is a proprietary firm founded in September 2023, providing accounting, audit and tax support with more than six years of professional experience.</p>
       {rows.map(([b, p]) => <div className="cat" key={b}><b>{b}</b><p>{p}</p></div>)}</div></div>
-    <div className="founder"><div><img src="/Boney.jpeg" alt="Boney Paulson" /></div><div><p className="eyebrow eb">Founder &amp; principal accountant</p><h3>Boney Paulson</h3><p className="founder-role">Chartered Accountant · Member of ICAI</p><p className="lead">Boney Paulson helps businesses and CPA firms manage accounting, audit and tax workflows across international markets. He is also a QuickBooks ProAdvisor and Xero Certified professional with MYOB experience.</p><div className="founder-links"><a className="btn" href="https://www.linkedin.com/in/ca-boney-paulson-aca-8b4b511b4/" target="_blank" rel="noreferrer">LinkedIn</a><a className="btn gold" href="https://www.upwork.com/freelancers/~010bee4589b8aced7b" target="_blank" rel="noreferrer">Upwork</a></div></div></div>
+    <div className="w founder-intro"><p>Meet the Chartered Accountant behind Paulson Global.</p><a className="btn" href="/founders">Meet our founder</a></div>
   </section>)
 }
