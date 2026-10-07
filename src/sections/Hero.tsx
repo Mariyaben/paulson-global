@@ -3,7 +3,6 @@ import { useEffect, useRef, useState } from 'react'
 export default function Hero() {
   const videoRef = useRef<HTMLVideoElement>(null)
   const [motionAllowed, setMotionAllowed] = useState(false)
-  const [paused, setPaused] = useState(false)
   const [ready, setReady] = useState(false)
 
   useEffect(() => {
@@ -19,7 +18,7 @@ export default function Hero() {
     if (!video || !motionAllowed) return
     let inView = true
     const update = () => {
-      if (paused || !inView || document.hidden) video.pause()
+      if (!inView || document.hidden) video.pause()
       else void video.play().catch(() => setReady(false))
     }
     const observer = new IntersectionObserver(([entry]) => {
@@ -34,7 +33,7 @@ export default function Hero() {
       document.removeEventListener('visibilitychange', update)
       video.pause()
     }
-  }, [motionAllowed, paused])
+  }, [motionAllowed])
 
   return (
     <section className="hero" aria-labelledby="hero-title">
@@ -62,17 +61,7 @@ export default function Hero() {
           <p className="lead">Accurate books and lower taxes. Zero compliance stress.</p>
           <a className="btn gold" href="#contact">Book a Free Consultation</a>
         </div>
-        {motionAllowed && ready && (
-          <button
-            className="hero-motion"
-            type="button"
-            aria-pressed={paused}
-            onClick={() => setPaused(value => !value)}
-          >
-            <span aria-hidden="true">{paused ? '▶' : 'Ⅱ'}</span>
-            {paused ? 'Play background' : 'Pause background'}
-          </button>
-        )}
+
       </div>
     </section>
   )
