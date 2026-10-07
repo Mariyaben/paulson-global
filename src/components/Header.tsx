@@ -3,7 +3,7 @@ import logo from '../assets/logo.jpg'
 
 const LINKS = [
   ['Services', '/#services'], ['Global Reach', '/#global'], ['About', '/#about'],
-  ['Founders', '/founders'], ['Insights', '/#insights'], ['Contact', '/#contact'],
+  ['Founder', '/founders'], ['Insights', '/#insights'], ['Contact', '/#contact'],
 ]
 
 export default function Header() {

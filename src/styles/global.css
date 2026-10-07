@@ -39,9 +39,6 @@ header nav .btn{align-self:flex-start;margin-top:20px}
 .hero h1{color:#fff;text-shadow:0 2px 24px rgba(0,0,0,.12)}
 .hero .lead{color:#f2f3f5}
 .hero .row{border-color:rgba(255,255,255,.3)}
-.hero-motion{display:flex;align-items:center;gap:10px;margin-top:28px;padding:8px 12px;border:1px solid rgba(255,255,255,.45);border-radius:2px;color:#fff;font-size:12px;background:rgba(8,20,39,.45)}
-.hero-motion:hover{background:rgba(8,20,39,.8)}
-.hero-motion span{font-size:14px;line-height:1}
 header:not(.s){color:#fff;background:linear-gradient(rgba(8,20,39,.5),rgba(8,20,39,0))}
 header:not(.s) .btn{background:var(--gold);color:var(--navy)}
 header:not(.s) .btn:hover{background:#b8921e}

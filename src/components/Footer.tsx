@@ -1,6 +1,6 @@
 import logo from '../assets/logo.jpg'
 import { CONTACT } from '../data/content'
-const LINKS: [string, string][] = [['Services', '#services'], ['Global Reach', '#global'], ['About', '#about'], ['Founders', '/founders'], ['Insights', '#insights'], ['Contact', '#contact']]
+const LINKS: [string, string][] = [['Services', '#services'], ['Global Reach', '#global'], ['About', '#about'], ['Founder', '/founders'], ['Insights', '#insights'], ['Contact', '#contact']]
 export default function Footer() {
   return (<footer><div className="w"><div>
     <div><img src={logo} alt="Paulson Global" /><p style={{ color: '#fff', fontSize: 20 }}>Balanced, everywhere.</p></div>
