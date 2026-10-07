@@ -1,0 +1,6 @@
+{
+  "rewrites": [
+    { "source": "/founders", "destination": "/index.html" },
+    { "source": "/founders/", "destination": "/index.html" }
+  ]
+}
