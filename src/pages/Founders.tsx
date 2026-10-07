@@ -11,7 +11,6 @@ export default function Founders() {
     <section className="founders-page" aria-labelledby="founders-title">
       <div className="w">
         <a className="ul founders-back" href="/">← Back to Paulson Global</a>
-        <p className="eyebrow eb">The people behind Paulson Global</p>
         <h1 id="founders-title">Meet our founder.</h1>
         <div className="founder">
           <div><img src="/Boney.jpeg" alt="Boney Paulson, founder of Paulson Global" /></div>
